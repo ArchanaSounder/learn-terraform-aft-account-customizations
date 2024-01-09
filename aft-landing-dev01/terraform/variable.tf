@@ -7,6 +7,7 @@ variable vpc_cidr {
 # Variable definition for VPC name
 variable vpc_name {
   type    = list(string)    
+  default = [ "lz-vpc1", "lz-vpc2" ]
 }
 
 # Variable declaration for region
