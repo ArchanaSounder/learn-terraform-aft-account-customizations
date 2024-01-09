@@ -1,7 +1,3 @@
-provider "aws" {
-  region                                       = var.region
-}
-
 # Module declaration for vpc
 module "vpc" {
   source                                         = "./module/vpc"
