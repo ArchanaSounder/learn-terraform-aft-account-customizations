@@ -2,7 +2,7 @@ provider "aws" {
   /* other provider config */
   assume_role {
     // Assume the organization access role
-    role_arn = "arn:aws:iam::${var.sandbox_admin_account_id}:role/AWSControlTowerExecution"
+    role_arn = "arn:aws:iam::${var.sandbox_admin_account_id}:role/AWSAFTExecution"
   }
   alias = "sandbox"
    region                  = "ap-south-1"
