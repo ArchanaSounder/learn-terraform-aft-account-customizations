@@ -39,7 +39,7 @@ variable assign_generated_ipv6_cidr_block {
 }
 */
 variable sandbox_admin_account_id{
-  default = "767397908688"
+  default = "339713170791"
 }
 
 
