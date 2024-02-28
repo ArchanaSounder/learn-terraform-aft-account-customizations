@@ -1,3 +1,12 @@
+provider "aws" {
+  /* other provider config */
+  assume_role {
+    // Assume the organization access role
+    role_arn = "arn:aws:iam::${var.sandbox_admin_account_id}:role/AWSControlTowerExecution"
+  }
+  alias = "sandbox"
+}
+
 module "aws_vpc" {
   source                     = "./module/vpc"
   name                       = var.name
