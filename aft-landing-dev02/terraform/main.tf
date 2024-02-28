@@ -5,6 +5,7 @@ provider "aws" {
     role_arn = "arn:aws:iam::${var.sandbox_admin_account_id}:role/AWSControlTowerExecution"
   }
   alias = "sandbox"
+   region                  = "ap-south-1"
 }
 
 module "aws_vpc" {
@@ -32,8 +33,9 @@ module "aws_vpc" {
     aws = aws.sandbox
   }
 }
-
+/*
 # Module declaration for S3 bucket creation
 module s3 {
    source                                        = "./module/s3"
 }
+*/
