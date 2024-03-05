@@ -33,7 +33,7 @@ module "aws_vpc" {
 
 # Module creation for iam account password policy
 module "aws_iam_account_password_policy_aft" {
-  source                         = "./modules/iam_password_policy"
+  source                         = "./module/iam_password_policy"
   minimum_password_length        = var.minimum_password_length
   require_lowercase_characters   = var.require_lowercase_characters
   require_numbers                = var.require_numbers
