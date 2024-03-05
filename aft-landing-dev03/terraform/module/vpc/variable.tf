@@ -64,7 +64,7 @@ variable enable_dns_support {
   type        = bool
 }
 
-variable name {
+variable vpc-name {
   description = "Name to be used on all the resources as identifier"
   type        = string
 }
