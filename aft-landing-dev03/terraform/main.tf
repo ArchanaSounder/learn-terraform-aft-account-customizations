@@ -7,7 +7,7 @@ provider "aws" {
   alias                    = "sandbox"
    region                  = "ap-south-1"
 }
-
+/*
 module "aws_vpc" {
   source                     = "./module/vpc"
   vpc-name                   = var.vpc-name
@@ -45,3 +45,4 @@ module "aws_iam_account_password_policy_aft" {
     aws = aws.sandbox
   }
 }
+*/
